@@ -1,0 +1,139 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: lightblue;
+}
+
+div.box {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    background-image: linear-gradient(rgb(228, 229, 255), lightblue);
+    height: fit-content;
+    padding-bottom: 50px;
+
+}
+
+div.box>h1 {
+    margin: 5px 0;
+    padding: 5px 20px;
+    background-color: ghostwhite;
+}
+
+div.box>div.form {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: transparent;
+}
+
+div.box>div.form>label {
+    font-size: large;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+div.box>div.form>input {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 10px;
+    border: 0;
+    background-color: white;
+}
+
+div.box>div.form>button {
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: lemonchiffon;
+    border: 0;
+    background-color: darkslategray;
+    color: white;
+    font-size: large;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+div.box>div.resultBox {
+    width: 100%;
+    display: none;
+    flex-flow: column;
+    align-items: center;
+    padding: 30px;
+    background-color: transparent;
+}
+
+div.box>div.resultBox>h2 {
+    padding: 10px;
+    width: fit-content;
+    background-color: transparent;
+}
+
+div.box>div.resultBox>span {
+    font-size: xx-large;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+div.box>div.resultBox>p {
+    padding: 5px 0;
+    background-color: transparent;
+}
+
+div.box>div.resultBox>ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    justify-content: space-between;
+    width: 100%;
+    gap: 5px;
+    background-color: transparent;
+}
+
+div.box>div.resultBox>ul>li {
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+@keyframes change {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.active {
+    animation: change 1000ms ease-in infinite;
+}
+
+.yellow {
+    background-color: yellow !important;
+}
+
+.green {
+    background-color: green !important;
+}
+
+.orange {
+    background-color: orange !important;
+}
+
+.red {
+    background-color: red !important;
+}
